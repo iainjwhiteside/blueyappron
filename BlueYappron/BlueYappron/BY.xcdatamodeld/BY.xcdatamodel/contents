@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="BlueYappronData">
+    <entity name="BlueYappron" representedClassName="BlueYappron" syncable="YES" codeGenerationType="class">
+        <relationship name="descriptionIcons" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DescriptionIcon" inverseName="blueYappron" inverseEntity="DescriptionIcon" syncable="YES"/>
+        <relationship name="foods" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Food" inverseName="blueYappron" inverseEntity="Food" syncable="YES"/>
+        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Recipe" inverseName="blueYappron" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="preppedFood" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreppedFood" inverseName="blueYappron" inverseEntity="PreppedFood" syncable="YES"/>
+        <relationship name="prepType" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PrepType" inverseName="blueYappron" inverseEntity="PrepType" syncable="YES"/>
+        <relationship name="tools" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Tool" inverseName="blueYappron" inverseEntity="Tool" syncable="YES"/>
+    </entity>
+    <entity name="DescriptionIcon" representedClassName="DescriptionIcon" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="descriptionIcons" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="descriptionUses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeStep" inverseName="descriptionIcon" inverseEntity="RecipeStep" syncable="YES"/>
+    </entity>
+    <entity name="Finish" representedClassName="Finish" syncable="YES" codeGenerationType="class">
+        <attribute name="finishText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="finish" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Food" representedClassName="Food" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="image" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="meat" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="Food" syncable="YES"/>
+        <attribute name="season" attributeType="Integer 16" minValueString="0" maxValueString="3" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="foods" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="preppedFoodUse" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreppedFood" inverseName="food" inverseEntity="PreppedFood" syncable="YES"/>
+        <relationship name="stepFood" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StepFood" inverseName="foods" inverseEntity="StepFood" syncable="YES"/>
+        <relationship name="toptionalFoods" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Toptional" inverseName="toptionalFoods" inverseEntity="Toptional" syncable="YES"/>
+    </entity>
+    <entity name="MiseEnPlaceItem" representedClassName="MiseEnPlaceItem" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" attributeType="String" syncable="YES"/>
+        <relationship name="mepPrep" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PreppedFood" inverseName="miseEnPlaced" inverseEntity="PreppedFood" syncable="YES"/>
+        <relationship name="recipes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="miseItems" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="PrepItem" representedClassName="PrepItem" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" attributeType="String" syncable="YES"/>
+        <attribute name="value" attributeType="String" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="prepItems" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="tool" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tool" inverseName="prepItemTool" inverseEntity="Tool" syncable="YES"/>
+    </entity>
+    <entity name="PreppedFood" representedClassName="PreppedFood" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="preppedFood" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="food" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="preppedFoodUse" inverseEntity="Food" syncable="YES"/>
+        <relationship name="miseEnPlaced" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MiseEnPlaceItem" inverseName="mepPrep" inverseEntity="MiseEnPlaceItem" syncable="YES"/>
+        <relationship name="prepType" maxCount="1" deletionRule="Nullify" destinationEntity="PrepType" inverseName="preppedFood" inverseEntity="PrepType" syncable="YES"/>
+    </entity>
+    <entity name="PrepType" representedClassName="PrepType" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="prepType" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="preppedFood" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PreppedFood" inverseName="prepType" inverseEntity="PreppedFood" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="favorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageSquare" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="imageToolbar" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="A Meal" syncable="YES"/>
+        <attribute name="serves" attributeType="Integer 16" minValueString="0" defaultValueString="4" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalTime" attributeType="Integer 16" minValueString="1" defaultValueString="30" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="meals" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="finish" maxCount="1" deletionRule="Cascade" destinationEntity="Finish" inverseName="recipe" inverseEntity="Finish" syncable="YES"/>
+        <relationship name="miseItems" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MiseEnPlaceItem" inverseName="recipes" inverseEntity="MiseEnPlaceItem" syncable="YES"/>
+        <relationship name="prepItems" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="PrepItem" inverseName="recipe" inverseEntity="PrepItem" syncable="YES"/>
+        <relationship name="steps" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RecipeStep" inverseName="recipe" inverseEntity="RecipeStep" syncable="YES"/>
+        <relationship name="toptional" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Toptional" inverseName="recipe" inverseEntity="Toptional" syncable="YES"/>
+    </entity>
+    <entity name="RecipeStep" representedClassName="RecipeStep" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" attributeType="String" syncable="YES"/>
+        <attribute name="longExplanation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="descriptionIcon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DescriptionIcon" inverseName="descriptionUses" inverseEntity="DescriptionIcon" syncable="YES"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="steps" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="stepFoods" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StepFood" inverseName="recipeStep" inverseEntity="StepFood" syncable="YES"/>
+    </entity>
+    <entity name="StepFood" representedClassName="StepFood" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="optionalNote" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foods" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="stepFood" inverseEntity="Food" syncable="YES"/>
+        <relationship name="recipeStep" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeStep" inverseName="stepFoods" inverseEntity="RecipeStep" syncable="YES"/>
+    </entity>
+    <entity name="Tool" representedClassName="Tool" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="blueYappron" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlueYappron" inverseName="tools" inverseEntity="BlueYappron" syncable="YES"/>
+        <relationship name="prepItemTool" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PrepItem" inverseName="tool" inverseEntity="PrepItem" syncable="YES"/>
+    </entity>
+    <entity name="Toptional" representedClassName="Toptional" syncable="YES" codeGenerationType="class">
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="toptional" inverseEntity="Recipe" syncable="YES"/>
+        <relationship name="toptionalFoods" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Food" inverseName="toptionalFoods" inverseEntity="Food" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BlueYappron" positionX="-101" positionY="-432" width="128" height="133"/>
+        <element name="Food" positionX="153" positionY="-423" width="128" height="193"/>
+        <element name="Recipe" positionX="61" positionY="161" width="128" height="223"/>
+        <element name="Toptional" positionX="9" positionY="59" width="128" height="73"/>
+        <element name="PrepType" positionX="-2" positionY="-279" width="128" height="103"/>
+        <element name="PreppedFood" positionX="160" positionY="-198" width="128" height="148"/>
+        <element name="Tool" positionX="-369" positionY="-414" width="128" height="118"/>
+        <element name="Finish" positionX="25" positionY="-36" width="128" height="73"/>
+        <element name="MiseEnPlaceItem" positionX="-351" positionY="-18" width="128" height="103"/>
+        <element name="PrepItem" positionX="-351" positionY="-198" width="128" height="103"/>
+        <element name="RecipeStep" positionX="-135" positionY="117" width="128" height="133"/>
+        <element name="StepFood" positionX="-108" positionY="-153" width="128" height="103"/>
+        <element name="DescriptionIcon" positionX="-218" positionY="-288" width="128" height="103"/>
+    </elements>
+</model>

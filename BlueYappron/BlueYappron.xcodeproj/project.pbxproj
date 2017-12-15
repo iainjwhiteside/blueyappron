@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F5503EC1FD759C200AE4571 /* MealsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5503EB1FD759C200AE4571 /* MealsCollectionViewController.swift */; };
+		2F641AD01FE235F0004E10BB /* BY.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F641ACE1FE235F0004E10BB /* BY.xcdatamodeld */; };
+		2F6916B61FE4555500E13858 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6916B51FE4555500E13858 /* Season.swift */; };
+		2F7230121FBFB5BC00D740C0 /* RecipeStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7230111FBFB5BC00D740C0 /* RecipeStepTableViewCell.swift */; };
+		2F7230141FC3A1B600D740C0 /* RecipeStepTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7230131FC3A1B600D740C0 /* RecipeStepTableViewController.swift */; };
+		2F7BFC2F1FBD0CDA00257B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFC2E1FBD0CDA00257B66 /* AppDelegate.swift */; };
+		2F7BFC341FBD0CDA00257B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BFC321FBD0CDA00257B66 /* Main.storyboard */; };
+		2F7BFC361FBD0CDA00257B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BFC351FBD0CDA00257B66 /* Assets.xcassets */; };
+		2F7BFC391FBD0CDA00257B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7BFC371FBD0CDA00257B66 /* LaunchScreen.storyboard */; };
+		2F7BFC441FBD0CDA00257B66 /* BlueYappronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFC431FBD0CDA00257B66 /* BlueYappronTests.swift */; };
+		2F7BFC4F1FBD0CDA00257B66 /* BlueYappronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFC4E1FBD0CDA00257B66 /* BlueYappronUITests.swift */; };
+		2F7BFC5D1FBD111100257B66 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFC5C1FBD111100257B66 /* Meal.swift */; };
+		2F8F406A1FD79BCA0078DF92 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F40691FD79BCA0078DF92 /* RecipeViewController.swift */; };
+		2FBE5B9E1FE48D1B00D68ED2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE5B9D1FE48D1B00D68ED2 /* GoogleService-Info.plist */; };
+		2FBE5B9F1FE48DB800D68ED2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE5B9D1FE48D1B00D68ED2 /* GoogleService-Info.plist */; };
+		2FBE5BA01FE48DB900D68ED2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FBE5B9D1FE48D1B00D68ED2 /* GoogleService-Info.plist */; };
+		2FC5313D1FD7566500E4489C /* MealCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5313C1FD7566500E4489C /* MealCollectionViewCell.swift */; };
+		2FCC46871FDB5739000BE15B /* TheRecipeStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC46861FDB5739000BE15B /* TheRecipeStep.swift */; };
+		2FED7AEB1FCCEE4300064171 /* RecipeStepTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FED7AEA1FCCEE4300064171 /* RecipeStepTableView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F7BFC401FBD0CDA00257B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7BFC231FBD0CDA00257B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7BFC2A1FBD0CDA00257B66;
+			remoteInfo = BlueYappron;
+		};
+		2F7BFC4B1FBD0CDA00257B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7BFC231FBD0CDA00257B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7BFC2A1FBD0CDA00257B66;
+			remoteInfo = BlueYappron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F5503EB1FD759C200AE4571 /* MealsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCollectionViewController.swift; sourceTree = "<group>"; };
+		2F641ACF1FE235F0004E10BB /* BY.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BY.xcdatamodel; sourceTree = "<group>"; };
+		2F6916B51FE4555500E13858 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		2F7230111FBFB5BC00D740C0 /* RecipeStepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTableViewCell.swift; sourceTree = "<group>"; };
+		2F7230131FC3A1B600D740C0 /* RecipeStepTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTableViewController.swift; sourceTree = "<group>"; };
+		2F7BFC2B1FBD0CDA00257B66 /* BlueYappron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueYappron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7BFC2E1FBD0CDA00257B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F7BFC331FBD0CDA00257B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F7BFC351FBD0CDA00257B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F7BFC381FBD0CDA00257B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F7BFC3A1FBD0CDA00257B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7BFC3F1FBD0CDA00257B66 /* BlueYappronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueYappronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7BFC431FBD0CDA00257B66 /* BlueYappronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueYappronTests.swift; sourceTree = "<group>"; };
+		2F7BFC451FBD0CDA00257B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7BFC4A1FBD0CDA00257B66 /* BlueYappronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueYappronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7BFC4E1FBD0CDA00257B66 /* BlueYappronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueYappronUITests.swift; sourceTree = "<group>"; };
+		2F7BFC501FBD0CDA00257B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7BFC5C1FBD111100257B66 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		2F8F40691FD79BCA0078DF92 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		2FBE5B9D1FE48D1B00D68ED2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FC5313C1FD7566500E4489C /* MealCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FCC46861FDB5739000BE15B /* TheRecipeStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheRecipeStep.swift; sourceTree = "<group>"; };
+		2FED7AEA1FCCEE4300064171 /* RecipeStepTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepTableView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F7BFC281FBD0CDA00257B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC3C1FBD0CDA00257B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC471FBD0CDA00257B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F7BFC221FBD0CDA00257B66 = {
+			isa = PBXGroup;
+			children = (
+				2F7BFC2D1FBD0CDA00257B66 /* BlueYappron */,
+				2F7BFC421FBD0CDA00257B66 /* BlueYappronTests */,
+				2F7BFC4D1FBD0CDA00257B66 /* BlueYappronUITests */,
+				2F7BFC2C1FBD0CDA00257B66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F7BFC2C1FBD0CDA00257B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F7BFC2B1FBD0CDA00257B66 /* BlueYappron.app */,
+				2F7BFC3F1FBD0CDA00257B66 /* BlueYappronTests.xctest */,
+				2F7BFC4A1FBD0CDA00257B66 /* BlueYappronUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F7BFC2D1FBD0CDA00257B66 /* BlueYappron */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE5B9D1FE48D1B00D68ED2 /* GoogleService-Info.plist */,
+				2FCC46861FDB5739000BE15B /* TheRecipeStep.swift */,
+				2F5503EB1FD759C200AE4571 /* MealsCollectionViewController.swift */,
+				2FC5313C1FD7566500E4489C /* MealCollectionViewCell.swift */,
+				2FED7AEA1FCCEE4300064171 /* RecipeStepTableView.swift */,
+				2F7230111FBFB5BC00D740C0 /* RecipeStepTableViewCell.swift */,
+				2F7BFC2E1FBD0CDA00257B66 /* AppDelegate.swift */,
+				2F8F40691FD79BCA0078DF92 /* RecipeViewController.swift */,
+				2F7BFC5C1FBD111100257B66 /* Meal.swift */,
+				2F7230131FC3A1B600D740C0 /* RecipeStepTableViewController.swift */,
+				2F7BFC321FBD0CDA00257B66 /* Main.storyboard */,
+				2F7BFC351FBD0CDA00257B66 /* Assets.xcassets */,
+				2F7BFC371FBD0CDA00257B66 /* LaunchScreen.storyboard */,
+				2F7BFC3A1FBD0CDA00257B66 /* Info.plist */,
+				2F641ACE1FE235F0004E10BB /* BY.xcdatamodeld */,
+				2F6916B51FE4555500E13858 /* Season.swift */,
+			);
+			path = BlueYappron;
+			sourceTree = "<group>";
+		};
+		2F7BFC421FBD0CDA00257B66 /* BlueYappronTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F7BFC431FBD0CDA00257B66 /* BlueYappronTests.swift */,
+				2F7BFC451FBD0CDA00257B66 /* Info.plist */,
+			);
+			path = BlueYappronTests;
+			sourceTree = "<group>";
+		};
+		2F7BFC4D1FBD0CDA00257B66 /* BlueYappronUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F7BFC4E1FBD0CDA00257B66 /* BlueYappronUITests.swift */,
+				2F7BFC501FBD0CDA00257B66 /* Info.plist */,
+			);
+			path = BlueYappronUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F7BFC2A1FBD0CDA00257B66 /* BlueYappron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7BFC531FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappron" */;
+			buildPhases = (
+				2F7BFC271FBD0CDA00257B66 /* Sources */,
+				2F7BFC281FBD0CDA00257B66 /* Frameworks */,
+				2F7BFC291FBD0CDA00257B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueYappron;
+			productName = BlueYappron;
+			productReference = 2F7BFC2B1FBD0CDA00257B66 /* BlueYappron.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F7BFC3E1FBD0CDA00257B66 /* BlueYappronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7BFC561FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappronTests" */;
+			buildPhases = (
+				2F7BFC3B1FBD0CDA00257B66 /* Sources */,
+				2F7BFC3C1FBD0CDA00257B66 /* Frameworks */,
+				2F7BFC3D1FBD0CDA00257B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F7BFC411FBD0CDA00257B66 /* PBXTargetDependency */,
+			);
+			name = BlueYappronTests;
+			productName = BlueYappronTests;
+			productReference = 2F7BFC3F1FBD0CDA00257B66 /* BlueYappronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F7BFC491FBD0CDA00257B66 /* BlueYappronUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7BFC591FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappronUITests" */;
+			buildPhases = (
+				2F7BFC461FBD0CDA00257B66 /* Sources */,
+				2F7BFC471FBD0CDA00257B66 /* Frameworks */,
+				2F7BFC481FBD0CDA00257B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F7BFC4C1FBD0CDA00257B66 /* PBXTargetDependency */,
+			);
+			name = BlueYappronUITests;
+			productName = BlueYappronUITests;
+			productReference = 2F7BFC4A1FBD0CDA00257B66 /* BlueYappronUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F7BFC231FBD0CDA00257B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Iain Whiteside";
+				TargetAttributes = {
+					2F7BFC2A1FBD0CDA00257B66 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					2F7BFC3E1FBD0CDA00257B66 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F7BFC2A1FBD0CDA00257B66;
+					};
+					2F7BFC491FBD0CDA00257B66 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2F7BFC2A1FBD0CDA00257B66;
+					};
+				};
+			};
+			buildConfigurationList = 2F7BFC261FBD0CDA00257B66 /* Build configuration list for PBXProject "BlueYappron" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F7BFC221FBD0CDA00257B66;
+			productRefGroup = 2F7BFC2C1FBD0CDA00257B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F7BFC2A1FBD0CDA00257B66 /* BlueYappron */,
+				2F7BFC3E1FBD0CDA00257B66 /* BlueYappronTests */,
+				2F7BFC491FBD0CDA00257B66 /* BlueYappronUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F7BFC291FBD0CDA00257B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7BFC391FBD0CDA00257B66 /* LaunchScreen.storyboard in Resources */,
+				2FBE5B9E1FE48D1B00D68ED2 /* GoogleService-Info.plist in Resources */,
+				2F7BFC361FBD0CDA00257B66 /* Assets.xcassets in Resources */,
+				2F7BFC341FBD0CDA00257B66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC3D1FBD0CDA00257B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE5B9F1FE48DB800D68ED2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC481FBD0CDA00257B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE5BA01FE48DB900D68ED2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F7BFC271FBD0CDA00257B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F641AD01FE235F0004E10BB /* BY.xcdatamodeld in Sources */,
+				2F7230141FC3A1B600D740C0 /* RecipeStepTableViewController.swift in Sources */,
+				2F7BFC5D1FBD111100257B66 /* Meal.swift in Sources */,
+				2FC5313D1FD7566500E4489C /* MealCollectionViewCell.swift in Sources */,
+				2F8F406A1FD79BCA0078DF92 /* RecipeViewController.swift in Sources */,
+				2F6916B61FE4555500E13858 /* Season.swift in Sources */,
+				2FED7AEB1FCCEE4300064171 /* RecipeStepTableView.swift in Sources */,
+				2F5503EC1FD759C200AE4571 /* MealsCollectionViewController.swift in Sources */,
+				2F7230121FBFB5BC00D740C0 /* RecipeStepTableViewCell.swift in Sources */,
+				2FCC46871FDB5739000BE15B /* TheRecipeStep.swift in Sources */,
+				2F7BFC2F1FBD0CDA00257B66 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC3B1FBD0CDA00257B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7BFC441FBD0CDA00257B66 /* BlueYappronTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7BFC461FBD0CDA00257B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7BFC4F1FBD0CDA00257B66 /* BlueYappronUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F7BFC411FBD0CDA00257B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7BFC2A1FBD0CDA00257B66 /* BlueYappron */;
+			targetProxy = 2F7BFC401FBD0CDA00257B66 /* PBXContainerItemProxy */;
+		};
+		2F7BFC4C1FBD0CDA00257B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7BFC2A1FBD0CDA00257B66 /* BlueYappron */;
+			targetProxy = 2F7BFC4B1FBD0CDA00257B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F7BFC321FBD0CDA00257B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7BFC331FBD0CDA00257B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F7BFC371FBD0CDA00257B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7BFC381FBD0CDA00257B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F7BFC511FBD0CDA00257B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F7BFC521FBD0CDA00257B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F7BFC541FBD0CDA00257B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2A7C59MKV;
+				INFOPLIST_FILE = BlueYappron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tunipwenis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F7BFC551FBD0CDA00257B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2A7C59MKV;
+				INFOPLIST_FILE = BlueYappron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tunipwenis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F7BFC571FBD0CDA00257B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueYappronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BlueYappronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueYappron.app/BlueYappron";
+			};
+			name = Debug;
+		};
+		2F7BFC581FBD0CDA00257B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueYappronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BlueYappronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueYappron.app/BlueYappron";
+			};
+			name = Release;
+		};
+		2F7BFC5A1FBD0CDA00257B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueYappronUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BlueYappronUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueYappron;
+			};
+			name = Debug;
+		};
+		2F7BFC5B1FBD0CDA00257B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlueYappronUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BlueYappronUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueYappron;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F7BFC261FBD0CDA00257B66 /* Build configuration list for PBXProject "BlueYappron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7BFC511FBD0CDA00257B66 /* Debug */,
+				2F7BFC521FBD0CDA00257B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7BFC531FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7BFC541FBD0CDA00257B66 /* Debug */,
+				2F7BFC551FBD0CDA00257B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7BFC561FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7BFC571FBD0CDA00257B66 /* Debug */,
+				2F7BFC581FBD0CDA00257B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7BFC591FBD0CDA00257B66 /* Build configuration list for PBXNativeTarget "BlueYappronUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7BFC5A1FBD0CDA00257B66 /* Debug */,
+				2F7BFC5B1FBD0CDA00257B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F641ACE1FE235F0004E10BB /* BY.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F641ACF1FE235F0004E10BB /* BY.xcdatamodel */,
+			);
+			currentVersion = 2F641ACF1FE235F0004E10BB /* BY.xcdatamodel */;
+			path = BY.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2F7BFC231FBD0CDA00257B66 /* Project object */;
+}
